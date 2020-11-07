@@ -23,7 +23,7 @@ def Excel_p(bale_path, imp_path):
             a_lis = []
             [a_lis.append(i) for i in out_subno if i in Imp_subno]
             print("大小包装:", a_lis)
-            imp_dic = dict(Counter(imp_subno))plug
+            imp_dic = dict(Counter(imp_subno))
             dup_value = {key: value for key, value in imp_dic.items() if value > 1}
             print("重复条码:", dup_value)
         except:
